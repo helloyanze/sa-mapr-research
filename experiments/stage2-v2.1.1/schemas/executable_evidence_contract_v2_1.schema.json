@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://samapr.local/schema/executable-evidence-contract-v2.1.json",
+  "title": "Executable Evidence Contract Schema v2.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "contract_id", "bug_key", "evidence_anchor", "hard_repair_scope", "repair_obligations", "verification_obligations"],
+  "properties": {
+    "schema_version": {"const": "2.1"},
+    "contract_id": {"type": "string", "minLength": 1},
+    "bug_key": {"type": "string", "minLength": 1},
+    "evidence_anchor": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["id", "source", "pattern", "category", "message", "priority", "rank", "file", "method", "line"],
+        "properties": {
+          "id": {"type": "string"}, "source": {"const": "SpotBugs_buggy_version"},
+          "pattern": {"type": "string"}, "category": {"type": "string"}, "message": {"type": "string"},
+          "priority": {"type": "string"}, "rank": {"type": "string"}, "file": {"type": "string", "minLength": 1},
+          "method": {"type": "string"}, "line": {"type": "string"}
+        }
+      }
+    },
+    "hard_repair_scope": {
+      "type": "object", "additionalProperties": false,
+      "required": ["allowed_source_files", "file_level", "tests_unchanged", "build_files_unchanged", "new_files_forbidden", "public_api_unchanged"],
+      "properties": {
+        "allowed_source_files": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+        "file_level": {"const": true}, "tests_unchanged": {"const": true}, "build_files_unchanged": {"const": true},
+        "new_files_forbidden": {"const": true}, "public_api_unchanged": {"const": true}
+      }
+    },
+    "repair_obligations": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["id", "type", "severity", "enforcement", "checker", "evidence_anchor_id", "description"],
+        "properties": {
+          "id": {"type": "string"}, "type": {"type": "string"},
+          "severity": {"enum": ["blocking", "advisory", "metric_only"]},
+          "enforcement": {"enum": ["reject", "record_and_feedback", "record_only"]},
+          "checker": {"type": "string", "minLength": 1}, "evidence_anchor_id": {"type": "string"}, "description": {"type": "string"}
+        }
+      }
+    },
+    "verification_obligations": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["id", "type", "severity", "enforcement", "checker"],
+        "properties": {
+          "id": {"type": "string"}, "type": {"type": "string"},
+          "severity": {"enum": ["blocking", "advisory", "metric_only"]},
+          "enforcement": {"enum": ["reject", "record_and_feedback", "record_only"]},
+          "checker": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "neutral_guidance": {"type": "string"}
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "generated_from": "SA-MAPR v2.1.1 local dependency lock (2026-08-24)",
+  "artifacts": [
+    {
+      "name": "defects4j-master.zip",
+      "size_bytes": 148572655,
+      "sha256": "ba1e6bc011d4290a84d4df625cfd3e366c8062722bf6a4648586bff185d13c56",
+      "purpose": "Exact Defects4J source snapshot used by the prepared environment"
+    },
+    {
+      "name": "defects4j-gradle-dists-v3.zip",
+      "size_bytes": 76334895,
+      "sha256": "2ac17f3a57e47bf05e0f2e01aecb0d1b9147033554eeb7998480eb1b7fa6d4fd",
+      "purpose": "Defects4J Gradle distributions"
+    },
+    {
+      "name": "defects4j-gradle-deps-v3.zip",
+      "size_bytes": 45094176,
+      "sha256": "d94100d316e56ef510c44050706a2bea7594d12cc4c7357d36b35e6bb1536545",
+      "purpose": "Defects4J offline Gradle dependencies"
+    },
+    {
+      "name": "spotbugs-4.10.3.zip",
+      "size_bytes": 15860882,
+      "sha256": "e814ee5bf9665412658c4d684e45eae3cf993148a71bc8bc93fb343e92288151",
+      "purpose": "Pinned SpotBugs binary distribution"
+    }
+  ],
+  "external_result_archives": [
+    {
+      "name": "SA-MAPR_v2.1.1_Stage2_20Bug_ARC_Formal_Complete_20260827.zip",
+      "sha256": "6f8c6ad5ecf0d7cff88317aedaf807d4e17991dafe95f0dd152b585e3601d6d6",
+      "git_policy": "external_only"
+    },
+    {
+      "name": "SA-MAPR_v2.1.1_Stage2_Developer_Patch_Correctness_Audit_20260827.zip",
+      "sha256": "1da522e309134e2852a3405e5afde54c8d590ef70b3350e72762be09d3e57315",
+      "git_policy": "external_only"
+    },
+    {
+      "name": "SA-MAPR_v2.1.1_Stage2_Next_Agent_Statistical_Analysis_Handoff_20260827.zip",
+      "sha256": "959e29f446d67ad05fa76cb8f8fc890665f973e10bf31d36a976f04e0bb38934",
+      "git_policy": "external_only"
+    },
+    {
+      "name": "SA-MAPR_v2.1.1_Stage2_6Case_Mechanism_Diagnosis_20260828.zip",
+      "sha256": "64653da4f4925af998b0b0d97d58f356a24626da02f60706183c5ceaf0b8d147",
+      "git_policy": "external_only"
+    }
+  ]
+}

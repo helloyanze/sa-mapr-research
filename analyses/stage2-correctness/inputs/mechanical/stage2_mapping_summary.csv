@@ -1,0 +1,3 @@
+scope,experiment_group,records,claimed_mapping_valid,realized_mapping_success,mapping_consistent,mapping_exact,mean_mapping_precision,mean_mapping_coverage
+selected_primary_patch,C,20,20,19,19,2,0.950000,0.950000
+all_attempts,C,41,41,37,35,5,0.894309,0.902439

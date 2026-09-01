@@ -1,0 +1,4 @@
+experiment_group,primary_runs,completed_runs,attempts,patch_apply_pass,compile_pass,trigger_test_pass,full_test_pass,plausible,target_warning_removed,public_api_unchanged,hard_scope_pass,blocking_obligations_all_pass,v0_test_only_accept,v1_generic_accept,v2_hybrid_accept,final_correctness_pending
+A,20,20,42,18,18,13,9,9,13,20,20,9,9,9,9,20
+R,20,20,39,20,20,15,12,12,16,19,20,11,12,11,11,20
+C,20,20,41,20,20,13,11,11,17,19,20,10,11,10,10,20

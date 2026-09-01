@@ -1,0 +1,7 @@
+evidence_stratum,experiment_group,bugs,plausible,correct,plausible_but_incorrect,mechanical_failure,correct_rate_all_bugs,precision_among_plausible
+direct,A,14,7,5,2,7,0.357143,0.714286
+direct,R,14,10,8,2,4,0.571429,0.800000
+direct,C,14,10,8,2,4,0.571429,0.800000
+supporting,A,6,2,2,0,4,0.333333,1.000000
+supporting,R,6,2,2,0,4,0.333333,1.000000
+supporting,C,6,1,1,0,5,0.166667,1.000000

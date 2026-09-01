@@ -1,0 +1,17 @@
+{
+  "run_id": "stage2_mve_formal_20260825T210517",
+  "primary_runs": 60,
+  "plausible_selected_patches": 32,
+  "non_plausible_primary_runs": 28,
+  "unique_plausible_patches": 25,
+  "duplicate_patch_instances": 7,
+  "duplicate_hash_groups": 6,
+  "generation_integrity": {
+    "run_id": "stage2_mve_formal_20260825T210517",
+    "package_manifest_sha256": "9f98711248aed35cc787d2cc0425a3a4338c9405ae57cf0a44bf9be2dde9ac1d",
+    "manifest_entries": 6862,
+    "missing": [],
+    "mismatched": [],
+    "pass": true
+  }
+}

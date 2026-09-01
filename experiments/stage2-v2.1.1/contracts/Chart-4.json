@@ -1,0 +1,132 @@
+{
+  "contract_id": "C-Chart-4-001",
+  "bug_key": "Chart-4",
+  "static_evidence": [
+    {
+      "source": "SpotBugs_buggy_version",
+      "pattern": "NP_NULL_ON_SOME_PATH",
+      "category": "CORRECTNESS",
+      "message": "Possible null pointer dereference",
+      "priority": "1",
+      "rank": "6",
+      "location": {
+        "file": "org/jfree/chart/plot/XYPlot.java",
+        "method": "getDataRange",
+        "start_line": "4493",
+        "end_line": "4493"
+      }
+    }
+  ],
+  "repair_obligations": [
+    {
+      "id": "O1",
+      "type": "NULL_SAFETY",
+      "checkability": "M_AST",
+      "severity": "blocking",
+      "target": {
+        "file": "org/jfree/chart/plot/XYPlot.java",
+        "method": "getDataRange"
+      },
+      "failure_policy": "reject",
+      "description": "Ensure the target dereference is safe on every feasible path."
+    },
+    {
+      "id": "O2",
+      "type": "PUBLIC_API_UNCHANGED",
+      "checkability": "M_AST",
+      "severity": "blocking",
+      "target": {
+        "file": "org/jfree/chart/plot/XYPlot.java",
+        "method": "getDataRange"
+      },
+      "failure_policy": "reject",
+      "description": "Do not change public or protected API signatures."
+    },
+    {
+      "id": "O3",
+      "type": "SCOPE_LIMITATION",
+      "checkability": "M_AST",
+      "severity": "blocking",
+      "target": {
+        "file": "org/jfree/chart/plot/XYPlot.java",
+        "method": "getDataRange"
+      },
+      "failure_policy": "reject",
+      "description": "Modify only the declared target source file and the minimum necessary code region."
+    }
+  ],
+  "verification_obligations": [
+    {
+      "id": "V1",
+      "type": "COMPILE_SUCCESS",
+      "checkability": "M_TOOL",
+      "checker": "Defects4JCompiler",
+      "severity": "blocking",
+      "failure_policy": "reject"
+    },
+    {
+      "id": "V2",
+      "type": "FAILING_TEST_PASS",
+      "checkability": "M_TOOL",
+      "checker": "Defects4JTestRunner",
+      "severity": "blocking",
+      "failure_policy": "reject"
+    },
+    {
+      "id": "V3",
+      "type": "ALL_TEST_PASS",
+      "checkability": "M_TOOL",
+      "checker": "Defects4JTestRunner",
+      "severity": "blocking",
+      "failure_policy": "reject"
+    },
+    {
+      "id": "V4",
+      "type": "TARGET_WARNING_REMOVED",
+      "checkability": "M_TOOL",
+      "checker": "SpotBugsDeltaChecker",
+      "severity": "blocking",
+      "failure_policy": "reject"
+    },
+    {
+      "id": "V5",
+      "type": "NO_NEW_SAME_WARNING",
+      "checkability": "M_TOOL",
+      "checker": "SpotBugsDeltaChecker",
+      "severity": "blocking",
+      "failure_policy": "reject"
+    },
+    {
+      "id": "V6",
+      "type": "PUBLIC_API_UNCHANGED",
+      "checkability": "M_AST",
+      "checker": "JavaParserApiDiff",
+      "severity": "blocking",
+      "failure_policy": "reject"
+    },
+    {
+      "id": "V7",
+      "type": "SCOPE_LIMITATION",
+      "checkability": "M_AST",
+      "checker": "DiffScopeChecker",
+      "severity": "blocking",
+      "failure_policy": "reject"
+    }
+  ],
+  "non_regression_constraints": [
+    "Do not modify tests.",
+    "Do not change public or protected API signatures.",
+    "Do not edit files outside the declared target source file.",
+    "Do not suppress SpotBugs warnings instead of correcting behavior."
+  ],
+  "acceptance_criteria": [
+    "Patch applies cleanly.",
+    "Project compiles.",
+    "Trigger tests pass.",
+    "All tests pass.",
+    "Target SpotBugs warning is removed.",
+    "No new same-pattern warning is introduced.",
+    "Public/protected API is unchanged.",
+    "Patch stays within allowed scope."
+  ]
+}

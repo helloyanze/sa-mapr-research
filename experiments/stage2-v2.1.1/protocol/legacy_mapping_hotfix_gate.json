@@ -1,0 +1,20 @@
+{
+  "pass": true,
+  "decision": "MAPPING_HOTFIX_PASS",
+  "checks": {
+    "root_cause_located": true,
+    "canonicalizer_implemented": true,
+    "comparator_uses_structured_canonical_mapping": true,
+    "mapping_metrics_recomputed": true,
+    "three_existing_c_groups_replayed_offline": true,
+    "format_only_false_mismatches_removed": true,
+    "genuine_mismatches_still_detected": true,
+    "unit_and_regression_tests_pass": true,
+    "original_functional_results_unchanged": true,
+    "no_new_data_leakage": true
+  },
+  "source_run": "revised_preflight_scopefix_20260825T155700",
+  "new_llm_api_calls": 0,
+  "implementation_commit": "513548d7f3aa779072e6ab65c57ace7455391efa",
+  "blocking_issues": []
+}

@@ -1,0 +1,65 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+
+# Java and build systems
+**/target/
+**/.gradle/
+**/.m2/
+*.class
+*.jar
+
+# Large dependency cache; transfer separately and verify hashes.
+artifacts/cache/
+artifacts/downloads/
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+
+# Runtime state and benchmark checkouts
+runs/*
+!runs/.gitkeep
+**/work/
+**/outputs/
+**/outputs_archive/
+**/outputs_revised/
+**/outputs_revised_mve/
+**/protocol_locks/
+**/stage2_logs/
+**/spotbugs_reports/
+**/responses/
+**/patches/
+**/attempt_reports/
+**/shared_contexts/
+
+# Generated analysis output. Publish reviewed small summaries to /results.
+analyses/**/analysis_output/
+analyses/**/.cache/
+
+# Generated documents and media
+*.docx
+*.pdf
+*.png
+*.jpg
+*.jpeg
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.tmp
+*.log

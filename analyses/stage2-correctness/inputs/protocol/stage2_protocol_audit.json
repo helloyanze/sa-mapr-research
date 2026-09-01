@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0",
+  "audited_at": "2026-08-27T09:58:11+08:00",
+  "run_id": "stage2_mve_formal_20260825T210517",
+  "protocol_lock_id": "stage2-v2.1.1-7a7d2bd44d0bc085",
+  "implementation_commit": "513548d7f3aa779072e6ab65c57ace7455391efa",
+  "decision": "PASS",
+  "generation_gate": "STAGE2_GENERATION_COMPLETE",
+  "checks": {
+    "protocol_lock_verifier": true,
+    "lock_snapshot_matches_authoritative": true,
+    "git_head_matches_locked_commit": true,
+    "single_run_id": true,
+    "single_protocol_lock_id": true,
+    "twenty_bugs_three_groups": true,
+    "sixty_manifest_rows_completed": true,
+    "sixty_bug_result_rows_completed": true,
+    "one_hundred_twenty_two_attempts_evaluated": true,
+    "attempt_counts_match_primary_results": true,
+    "artifact_counts_match": true,
+    "all_referenced_artifacts_exist": true,
+    "shared_context_fairness": true,
+    "prompt_contract_context_leakage": true,
+    "v0_v1_v2_complete": true,
+    "c_group_mapping_complete": true,
+    "token_runtime_cost_complete": true,
+    "framework_failures_zero": true,
+    "final_correctness_remains_pending": true
+  },
+  "protocol_lock_verifier_output": {
+    "pass": true,
+    "problems": []
+  },
+  "counts": {
+    "bugs": 20,
+    "primary_runs": 60,
+    "bug_results": 60,
+    "attempts": 122,
+    "prompts": 122,
+    "raw_responses": 122,
+    "patches": 122,
+    "attempt_reports": 122,
+    "evidence_reports": 122,
+    "shared_contexts": 20,
+    "contract_leakage_audits": 20,
+    "shared_context_leakage_audits": 20,
+    "framework_failures": 0,
+    "leakage_findings": 0
+  },
+  "usage": {
+    "input_tokens": 1651100,
+    "output_tokens": 41527,
+    "total_tokens": 1692627,
+    "estimated_cost": 0.75435699,
+    "aggregate_runtime_seconds": 60451.089,
+    "wall_clock_started_at": "2026-08-25T21:21:12+08:00",
+    "wall_clock_finished_at": "2026-08-26T16:43:08+08:00",
+    "wall_clock_seconds": 69716.0
+  },
+  "missing_referenced_artifacts": [],
+  "problems": [],
+  "correctness_audit_status": "not_started; all 60 primary results remain pending_human"
+}

@@ -1,0 +1,8 @@
+**
+!infra/
+!infra/docker/
+!infra/docker/Dockerfile
+!artifacts/
+!artifacts/cache/
+!artifacts/cache/*.zip
+!requirements-analysis.lock

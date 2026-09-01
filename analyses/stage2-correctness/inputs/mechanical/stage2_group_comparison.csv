@@ -1,0 +1,14 @@
+metric,denominator,A,R,C,R_minus_A,C_minus_R,C_minus_A
+attempts,122,42,39,41,-3,2,-1
+patch_apply_pass,20,18,20,20,2,0,2
+compile_pass,20,18,20,20,2,0,2
+trigger_test_pass,20,13,15,13,2,-2,0
+full_test_pass,20,9,12,11,3,-1,2
+plausible,20,9,12,11,3,-1,2
+target_warning_removed,20,13,16,17,3,1,4
+public_api_unchanged,20,20,19,19,-1,0,-1
+hard_scope_pass,20,20,20,20,0,0,0
+blocking_obligations_all_pass,20,9,11,10,2,-1,1
+v0_test_only_accept,20,9,12,11,3,-1,2
+v1_generic_accept,20,9,11,10,2,-1,1
+v2_hybrid_accept,20,9,11,10,2,-1,1

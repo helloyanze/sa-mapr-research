@@ -1,0 +1,13 @@
+scope_group,verifier,records,accepted,rejected,true_accept,false_accept,true_reject,false_reject,precision_among_accepted,hybrid_only_interception,harmful_extra_rejection
+A,V0_test_only,20,9,11,7,2,11,0,0.777778,0,0
+A,V1_generic,20,9,11,7,2,11,0,0.777778,0,0
+A,V2_hybrid,20,9,11,7,2,11,0,0.777778,0,0
+R,V0_test_only,20,12,8,10,2,8,0,0.833333,0,0
+R,V1_generic,20,11,9,9,2,8,1,0.818182,0,0
+R,V2_hybrid,20,11,9,9,2,8,1,0.818182,0,1
+C,V0_test_only,20,11,9,9,2,9,0,0.818182,0,0
+C,V1_generic,20,10,10,8,2,9,1,0.800000,0,0
+C,V2_hybrid,20,10,10,8,2,9,1,0.800000,0,1
+ALL,V0_test_only,60,32,28,26,6,28,0,0.812500,0,0
+ALL,V1_generic,60,30,30,24,6,28,2,0.800000,0,0
+ALL,V2_hybrid,60,30,30,24,6,28,2,0.800000,0,2

@@ -1,0 +1,73 @@
+{
+  "stage2_started": true,
+  "execution_state": "prepared_awaiting_preflight",
+  "project_root": ".",
+  "wsl_distro": "Ubuntu-24.04",
+  "work_root": "./work",
+  "output_root": "./outputs",
+  "defects4j_bin": "defects4j",
+  "spotbugs_bin": "spotbugs",
+  "git_bin": "git",
+  "patch_bin": "patch",
+  "java_bin": "java",
+  "maven_bin": "mvn",
+  "java_home": "",
+  "javaparser_checker_jar": "./tools/javaparser-checker/target/samapr-javaparser-checker.jar",
+  "llm": {
+    "api_base": "https://api.deepseek.com",
+    "api_key_env": "LLM_API_KEY",
+    "model": "deepseek-v4-pro",
+    "model_version": "DeepSeek-V4-Pro",
+    "thinking": {
+      "type": "disabled"
+    },
+    "temperature": 0,
+    "top_p": 1.0,
+    "max_output_tokens": 4096,
+    "maximum_attempts": 3,
+    "total_token_budget_per_bug_group": 120000,
+    "input_price_per_million": 0.435,
+    "output_price_per_million": 0.87,
+    "price_currency": "USD",
+    "input_pricing_basis": "cache_miss",
+    "pricing_checked_on": "2026-08-24",
+    "timeout_seconds": 240,
+    "network_retries": 3
+  },
+  "timeouts": {
+    "checkout": 600,
+    "compile": 900,
+    "trigger_test": 900,
+    "all_tests": 1800,
+    "spotbugs": 900,
+    "maven_build": 600
+  },
+  "patch_quantity_limit_per_attempt": 1,
+  "context": {
+    "mode": "frozen_target_method_context",
+    "window_lines": 120
+  },
+  "preflight_bug_keys": [
+    "Chart-1",
+    "Codec-1",
+    "Chart-22"
+  ],
+  "backup_pool_locked": [
+    "Jsoup-4",
+    "Jsoup-32",
+    "Math-38"
+  ],
+  "fairness_lock": {
+    "same_model": true,
+    "same_model_version": true,
+    "same_temperature": true,
+    "same_top_p": true,
+    "same_max_output_tokens": true,
+    "same_max_attempts": true,
+    "same_token_budget": true,
+    "same_target_context": true,
+    "same_trigger_test_info": true,
+    "same_timeouts": true,
+    "same_patch_quantity_limit": true
+  }
+}

@@ -1,0 +1,4 @@
+experiment_group,primary_runs,attempts,input_tokens,output_tokens,total_tokens,estimated_cost,aggregate_runtime_seconds
+A,20,42,546534,13439,559973,0.24943422,19294.544
+R,20,39,529278,10702,539980,0.23954667,20512.351
+C,20,41,575288,17386,592674,0.26537610,20644.194

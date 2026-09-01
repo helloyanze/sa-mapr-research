@@ -1,0 +1,18 @@
+{
+  "CN_IDIOM_NO_SUPER_CALL": {"type": "CLONE_PROTOCOL", "expected_ast_nodes": ["MethodCallExpr"]},
+  "CO_COMPARETO_INCORRECT_FLOATING": {"type": "COMPARISON_CONTRACT", "expected_ast_nodes": ["ReturnStmt", "MethodCallExpr"]},
+  "DB_DUPLICATE_SWITCH_CLAUSES": {"type": "SWITCH_BRANCH_DISTINCTNESS", "expected_ast_nodes": ["SwitchStmt", "SwitchEntry"]},
+  "DLS_DEAD_LOCAL_STORE": {"type": "VALUE_FLOW_CONSISTENCY", "expected_ast_nodes": ["AssignExpr", "VariableDeclarator"]},
+  "DM_CONVERT_CASE": {"type": "EXPLICIT_LOCALE_CASE_CONVERSION", "expected_ast_nodes": ["MethodCallExpr"], "source_regex": "\\.to(?:Lower|Upper)Case\\s*\\([^)]*(?:Locale|ROOT|ENGLISH)"},
+  "NP_ALWAYS_NULL": {"type": "NULL_GUARD_OR_CONTROL_FLOW_CORRECTION", "expected_ast_nodes": ["IfStmt", "ConditionalExpr", "ReturnStmt"]},
+  "NP_BOOLEAN_RETURN_NULL": {"type": "BOOLEAN_RETURN_NON_NULL", "expected_ast_nodes": ["ReturnStmt", "BooleanLiteralExpr"]},
+  "NP_LOAD_OF_KNOWN_NULL_VALUE": {"type": "NULL_GUARD_OR_CONTROL_FLOW_CORRECTION", "expected_ast_nodes": ["IfStmt", "ConditionalExpr", "ReturnStmt"]},
+  "NP_NULL_ON_SOME_PATH": {"type": "NULL_SAFETY", "expected_ast_nodes": ["IfStmt", "ConditionalExpr", "ReturnStmt"]},
+  "RCN_REDUNDANT_NULLCHECK_WOULD_HAVE_BEEN_A_NPE": {"type": "NULL_CHECK_ORDERING", "expected_ast_nodes": ["IfStmt", "BinaryExpr"]},
+  "RpC_REPEATED_CONDITIONAL_TEST": {"type": "CONDITIONAL_BRANCH_DISTINCTNESS", "expected_ast_nodes": ["IfStmt", "BinaryExpr"]},
+  "SE_PRIVATE_READ_RESOLVE_NOT_INHERITED": {"type": "SERIALIZATION_PROTOCOL", "expected_ast_nodes": ["MethodDeclaration", "MethodCallExpr"]},
+  "SF_DEAD_STORE_DUE_TO_SWITCH_FALLTHROUGH": {"type": "SWITCH_FALLTHROUGH_CONTROL", "expected_ast_nodes": ["SwitchStmt", "SwitchEntry", "BreakStmt"]},
+  "SF_SWITCH_FALLTHROUGH": {"type": "SWITCH_FALLTHROUGH_CONTROL", "expected_ast_nodes": ["SwitchStmt", "SwitchEntry", "BreakStmt"]},
+  "SF_SWITCH_NO_DEFAULT": {"type": "SWITCH_COMPLETENESS", "expected_ast_nodes": ["SwitchStmt", "SwitchEntry"]},
+  "UC_USELESS_CONDITION": {"type": "CONDITION_SEMANTICS", "expected_ast_nodes": ["IfStmt", "BinaryExpr", "ConditionalExpr"]}
+}

@@ -1,0 +1,93 @@
+{
+  "audited_at": "2026-08-27T16:46:56+08:00",
+  "run_id": "stage2_mve_formal_20260825T210517",
+  "audited_plausible_patches": 32,
+  "unique_patches": 25,
+  "duplicate_instances": 7,
+  "duplicate_hash_groups": 6,
+  "group_results": [
+    {
+      "group": "A",
+      "plausible": 9,
+      "correct": 7,
+      "plausible_but_incorrect": 2,
+      "precision": "0.777778"
+    },
+    {
+      "group": "R",
+      "plausible": 12,
+      "correct": 10,
+      "plausible_but_incorrect": 2,
+      "precision": "0.833333"
+    },
+    {
+      "group": "C",
+      "plausible": 11,
+      "correct": 9,
+      "plausible_but_incorrect": 2,
+      "precision": "0.818182"
+    }
+  ],
+  "pairwise": {
+    "A_to_R_gains": 3,
+    "A_to_R_harms": 0,
+    "R_to_C_gains": 0,
+    "R_to_C_harms": 1,
+    "A_to_C_gains": 3,
+    "A_to_C_harms": 1
+  },
+  "verifier_all": {
+    "V0_test_only": {
+      "scope_group": "ALL",
+      "verifier": "V0_test_only",
+      "records": 60,
+      "accepted": 32,
+      "rejected": 28,
+      "true_accept": 26,
+      "false_accept": 6,
+      "true_reject": 28,
+      "false_reject": 0,
+      "precision_among_accepted": "0.812500",
+      "hybrid_only_interception": 0,
+      "harmful_extra_rejection": 0
+    },
+    "V1_generic": {
+      "scope_group": "ALL",
+      "verifier": "V1_generic",
+      "records": 60,
+      "accepted": 30,
+      "rejected": 30,
+      "true_accept": 24,
+      "false_accept": 6,
+      "true_reject": 28,
+      "false_reject": 2,
+      "precision_among_accepted": "0.800000",
+      "hybrid_only_interception": 0,
+      "harmful_extra_rejection": 0
+    },
+    "V2_hybrid": {
+      "scope_group": "ALL",
+      "verifier": "V2_hybrid",
+      "records": 60,
+      "accepted": 30,
+      "rejected": 30,
+      "true_accept": 24,
+      "false_accept": 6,
+      "true_reject": 28,
+      "false_reject": 2,
+      "precision_among_accepted": "0.800000",
+      "hybrid_only_interception": 0,
+      "harmful_extra_rejection": 2
+    }
+  },
+  "mapping_contingency": {
+    "consistent_correct": 9,
+    "consistent_incorrect": 10,
+    "inconsistent_incorrect": 1
+  },
+  "second_review_cases": 6,
+  "unresolved_cases": 0,
+  "pending_human": 0,
+  "generation_artifacts_unchanged": true,
+  "gate": "STAGE2_CORRECTNESS_AUDIT_COMPLETE"
+}

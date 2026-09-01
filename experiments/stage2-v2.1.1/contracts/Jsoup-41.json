@@ -1,0 +1,132 @@
+{
+  "contract_id": "C-Jsoup-41-001",
+  "bug_key": "Jsoup-41",
+  "static_evidence": [
+    {
+      "source": "SpotBugs_buggy_version",
+      "pattern": "DLS_DEAD_LOCAL_STORE",
+      "category": "STYLE",
+      "message": "Dead store to local variable",
+      "priority": "2",
+      "rank": "17",
+      "location": {
+        "file": "org/jsoup/nodes/Element.java",
+        "method": "equals",
+        "start_line": "1173",
+        "end_line": "1173"
+      }
+    }
+  ],
+  "repair_obligations": [
+    {
+      "id": "O1",
+      "type": "VALUE_FLOW_CONSISTENCY",
+      "checkability": "M_AST",
+      "severity": "blocking",
+      "target": {
+        "file": "org/jsoup/nodes/Element.java",
+        "method": "equals"
+      },
+      "failure_policy": "reject",
+      "description": "Use the computed value in the behavior it was intended to control, or remove the invalid computation."
+    },
+    {
+      "id": "O2",
+      "type": "PUBLIC_API_UNCHANGED",
+      "checkability": "M_AST",
+      "severity": "blocking",
+      "target": {
+        "file": "org/jsoup/nodes/Element.java",
+        "method": "equals"
+      },
+      "failure_policy": "reject",
+      "description": "Do not change public or protected API signatures."
+    },
+    {
+      "id": "O3",
+      "type": "SCOPE_LIMITATION",
+      "checkability": "M_AST",
+      "severity": "blocking",
+      "target": {
+        "file": "org/jsoup/nodes/Element.java",
+        "method": "equals"
+      },
+      "failure_policy": "reject",
+      "description": "Modify only the declared target source file and the minimum necessary code region."
+    }
+  ],
+  "verification_obligations": [
+    {
+      "id": "V1",
+      "type": "COMPILE_SUCCESS",
+      "checkability": "M_TOOL",
+      "checker": "Defects4JCompiler",
+      "severity": "blocking",
+      "failure_policy": "reject"
+    },
+    {
+      "id": "V2",
+      "type": "FAILING_TEST_PASS",
+      "checkability": "M_TOOL",
+      "checker": "Defects4JTestRunner",
+      "severity": "blocking",
+      "failure_policy": "reject"
+    },
+    {
+      "id": "V3",
+      "type": "ALL_TEST_PASS",
+      "checkability": "M_TOOL",
+      "checker": "Defects4JTestRunner",
+      "severity": "blocking",
+      "failure_policy": "reject"
+    },
+    {
+      "id": "V4",
+      "type": "TARGET_WARNING_REMOVED",
+      "checkability": "M_TOOL",
+      "checker": "SpotBugsDeltaChecker",
+      "severity": "blocking",
+      "failure_policy": "reject"
+    },
+    {
+      "id": "V5",
+      "type": "NO_NEW_SAME_WARNING",
+      "checkability": "M_TOOL",
+      "checker": "SpotBugsDeltaChecker",
+      "severity": "blocking",
+      "failure_policy": "reject"
+    },
+    {
+      "id": "V6",
+      "type": "PUBLIC_API_UNCHANGED",
+      "checkability": "M_AST",
+      "checker": "JavaParserApiDiff",
+      "severity": "blocking",
+      "failure_policy": "reject"
+    },
+    {
+      "id": "V7",
+      "type": "SCOPE_LIMITATION",
+      "checkability": "M_AST",
+      "checker": "DiffScopeChecker",
+      "severity": "blocking",
+      "failure_policy": "reject"
+    }
+  ],
+  "non_regression_constraints": [
+    "Do not modify tests.",
+    "Do not change public or protected API signatures.",
+    "Do not edit files outside the declared target source file.",
+    "Do not suppress SpotBugs warnings instead of correcting behavior."
+  ],
+  "acceptance_criteria": [
+    "Patch applies cleanly.",
+    "Project compiles.",
+    "Trigger tests pass.",
+    "All tests pass.",
+    "Target SpotBugs warning is removed.",
+    "No new same-pattern warning is introduced.",
+    "Public/protected API is unchanged.",
+    "Patch stays within allowed scope."
+  ]
+}

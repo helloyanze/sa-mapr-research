@@ -1,0 +1,54 @@
+{
+  "protocol_version": "2.1",
+  "mapping_implementation_version": "2.1.1",
+  "full_mve_enabled": true,
+  "wsl_distro": "Ubuntu-24.04",
+  "work_root": "./work",
+  "mve_output_root": "./outputs_revised_mve",
+  "protocol_lock_path": "./protocol_locks/stage2_protocol_lock.json",
+  "defects4j_bin": "/opt/defects4j/framework/bin/defects4j",
+  "spotbugs_bin": "/opt/spotbugs/bin/spotbugs",
+  "git_bin": "/usr/bin/git",
+  "patch_bin": "/usr/bin/patch",
+  "java_bin": "/usr/bin/java",
+  "maven_bin": "/usr/bin/mvn",
+  "java_home": "/usr/lib/jvm/java-11-openjdk-amd64",
+  "javaparser_checker_jar": "./tools/javaparser-checker/target/samapr-javaparser-checker.jar",
+  "llm": {
+    "api_base": "https://api.deepseek.com",
+    "api_key_env": "LLM_API_KEY",
+    "model": "deepseek-v4-pro",
+    "model_version": "DeepSeek-V4-Pro",
+    "thinking": {"type": "disabled"},
+    "temperature": 0,
+    "top_p": 1.0,
+    "max_output_tokens": 4096,
+    "maximum_attempts": 3,
+    "total_token_budget_per_bug_group": 120000,
+    "input_price_per_million": 0.435,
+    "output_price_per_million": 0.87,
+    "price_currency": "USD",
+    "timeout_seconds": 240,
+    "network_retries": 3
+  },
+  "timeouts": {
+    "checkout": 600,
+    "compile": 900,
+    "trigger_test": 900,
+    "all_tests": 1800,
+    "spotbugs": 900,
+    "maven_build": 600
+  },
+  "patch_quantity_limit_per_attempt": 1,
+  "shared_context": {
+    "source_policy": "full_allowed_files",
+    "require_untruncated_preflight": true
+  },
+  "stage2_mve_bug_keys": [
+    "Chart-24", "Codec-1", "Collections-1", "Collections-14", "Collections-26",
+    "Jsoup-45", "Jsoup-89", "Lang-40", "Lang-62", "Math-91",
+    "Chart-1", "Chart-4", "Chart-17", "JacksonDatabind-3", "Chart-22",
+    "Closure-49", "JacksonDatabind-29", "JacksonDatabind-75", "Jsoup-41", "Mockito-1"
+  ],
+  "revised_groups": ["A", "R", "C"]
+}

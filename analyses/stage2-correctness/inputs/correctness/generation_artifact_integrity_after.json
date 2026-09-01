@@ -1,0 +1,9 @@
+{
+  "run_id": "stage2_mve_formal_20260825T210517",
+  "package_manifest_sha256": "9f98711248aed35cc787d2cc0425a3a4338c9405ae57cf0a44bf9be2dde9ac1d",
+  "manifest_entries": 6862,
+  "missing": [],
+  "mismatched": [],
+  "pass": true,
+  "matches_before": true
+}

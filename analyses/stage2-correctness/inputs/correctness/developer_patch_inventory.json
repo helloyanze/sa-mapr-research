@@ -1,0 +1,204 @@
+{
+  "Chart-1": {
+    "buggy_tag": "D4J_Chart_1_BUGGY_VERSION",
+    "fixed_tag": "D4J_Chart_1_FIXED_VERSION",
+    "developer_patch_path": "developer_patches/Chart-1.diff",
+    "developer_patch_sha256": "b00300f7dfe9fbaff585fffbe8b00c33fefe1bb34a37b77e5d86a8a1e9aad044",
+    "developer_changed_files": [
+      ".defects4j.config",
+      "source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java"
+    ]
+  },
+  "Chart-17": {
+    "buggy_tag": "D4J_Chart_17_BUGGY_VERSION",
+    "fixed_tag": "D4J_Chart_17_FIXED_VERSION",
+    "developer_patch_path": "developer_patches/Chart-17.diff",
+    "developer_patch_sha256": "07c0134654487aa0cc8ffaefd9dcdc1cfb8c88994cc7a52cfe3c5df958a0eaa5",
+    "developer_changed_files": [
+      ".defects4j.config",
+      "source/org/jfree/data/time/TimeSeries.java"
+    ]
+  },
+  "Chart-22": {
+    "buggy_tag": "D4J_Chart_22_BUGGY_VERSION",
+    "fixed_tag": "D4J_Chart_22_FIXED_VERSION",
+    "developer_patch_path": "developer_patches/Chart-22.diff",
+    "developer_patch_sha256": "b08a2d5573a0b9ed601470349a1b69328662a6fd12048e4e789294c780370337",
+    "developer_changed_files": [
+      ".defects4j.config",
+      "source/org/jfree/data/KeyedObjects2D.java"
+    ]
+  },
+  "Chart-24": {
+    "buggy_tag": "D4J_Chart_24_BUGGY_VERSION",
+    "fixed_tag": "D4J_Chart_24_FIXED_VERSION",
+    "developer_patch_path": "developer_patches/Chart-24.diff",
+    "developer_patch_sha256": "040ddcc6b0112e8280708c7743dfecb66c6539d5692958890de027d1bba13b75",
+    "developer_changed_files": [
+      ".defects4j.config",
+      "source/org/jfree/chart/renderer/GrayPaintScale.java"
+    ]
+  },
+  "Chart-4": {
+    "buggy_tag": "D4J_Chart_4_BUGGY_VERSION",
+    "fixed_tag": "D4J_Chart_4_FIXED_VERSION",
+    "developer_patch_path": "developer_patches/Chart-4.diff",
+    "developer_patch_sha256": "b2ae89c108428e7f446486ebd98db627381a8452a187a187fe33a66eed1083b2",
+    "developer_changed_files": [
+      ".defects4j.config",
+      "source/org/jfree/chart/plot/XYPlot.java"
+    ]
+  },
+  "Closure-49": {
+    "buggy_tag": "D4J_Closure_49_BUGGY_VERSION",
+    "fixed_tag": "D4J_Closure_49_FIXED_VERSION",
+    "developer_patch_path": "developer_patches/Closure-49.diff",
+    "developer_patch_sha256": "c7468e861aa725f76e843a61482c392115cf946e2858773e417d54f528531441",
+    "developer_changed_files": [
+      ".defects4j.config",
+      "src/com/google/javascript/jscomp/MakeDeclaredNamesUnique.java"
+    ]
+  },
+  "Codec-1": {
+    "buggy_tag": "D4J_Codec_1_BUGGY_VERSION",
+    "fixed_tag": "D4J_Codec_1_FIXED_VERSION",
+    "developer_patch_path": "developer_patches/Codec-1.diff",
+    "developer_patch_sha256": "34d59a77857e736badd00315b8126ae6694f9c7fb838e2355e1bd523b50b3986",
+    "developer_changed_files": [
+      ".defects4j.config",
+      "src/java/org/apache/commons/codec/language/Caverphone.java",
+      "src/java/org/apache/commons/codec/language/Metaphone.java",
+      "src/java/org/apache/commons/codec/language/SoundexUtils.java"
+    ]
+  },
+  "Collections-1": {
+    "buggy_tag": "D4J_Collections_1_BUGGY_VERSION",
+    "fixed_tag": "D4J_Collections_1_FIXED_VERSION",
+    "developer_patch_path": "developer_patches/Collections-1.diff",
+    "developer_patch_sha256": "a18a749d2fa092b2a968665cbc291e2de163a354a94c7b0ff6f992d3952e1595",
+    "developer_changed_files": [
+      ".defects4j.config",
+      "src/java/org/apache/commons/collections/map/Flat3Map.java"
+    ]
+  },
+  "Collections-14": {
+    "buggy_tag": "D4J_Collections_14_BUGGY_VERSION",
+    "fixed_tag": "D4J_Collections_14_FIXED_VERSION",
+    "developer_patch_path": "developer_patches/Collections-14.diff",
+    "developer_patch_sha256": "a5d3489f0172a20dc9d95f910d39f35b2e972328df09ad6ab4b78b36b2717366",
+    "developer_changed_files": [
+      ".defects4j.config",
+      "src/java/org/apache/commons/collections/map/CaseInsensitiveMap.java"
+    ]
+  },
+  "Collections-26": {
+    "buggy_tag": "D4J_Collections_26_BUGGY_VERSION",
+    "fixed_tag": "D4J_Collections_26_FIXED_VERSION",
+    "developer_patch_path": "developer_patches/Collections-26.diff",
+    "developer_patch_sha256": "4c3f9baf98745630bc5a8cdf655f3b7ae5905cd0307ad97c8a38db802f555f85",
+    "developer_changed_files": [
+      ".defects4j.config",
+      "src/main/java/org/apache/commons/collections4/keyvalue/MultiKey.java"
+    ]
+  },
+  "JacksonDatabind-29": {
+    "buggy_tag": "D4J_JacksonDatabind_29_BUGGY_VERSION",
+    "fixed_tag": "D4J_JacksonDatabind_29_FIXED_VERSION",
+    "developer_patch_path": "developer_patches/JacksonDatabind-29.diff",
+    "developer_patch_sha256": "97ad5cb48da334ae5e9a510a7a525026bd88a52ec2d9c35921541b0004aa6872",
+    "developer_changed_files": [
+      ".defects4j.config",
+      "src/main/java/com/fasterxml/jackson/databind/deser/impl/ExternalTypeHandler.java"
+    ]
+  },
+  "JacksonDatabind-3": {
+    "buggy_tag": "D4J_JacksonDatabind_3_BUGGY_VERSION",
+    "fixed_tag": "D4J_JacksonDatabind_3_FIXED_VERSION",
+    "developer_patch_path": "developer_patches/JacksonDatabind-3.diff",
+    "developer_patch_sha256": "fb5c7c33c3558ce70600b95e270ee049d6edf7f854a4c41ecbac7e5ea737f5d7",
+    "developer_changed_files": [
+      ".defects4j.config",
+      "src/main/java/com/fasterxml/jackson/databind/deser/std/StringArrayDeserializer.java"
+    ]
+  },
+  "JacksonDatabind-75": {
+    "buggy_tag": "D4J_JacksonDatabind_75_BUGGY_VERSION",
+    "fixed_tag": "D4J_JacksonDatabind_75_FIXED_VERSION",
+    "developer_patch_path": "developer_patches/JacksonDatabind-75.diff",
+    "developer_patch_sha256": "79c8d0e31f5810732ccc36d0be11a6c8b43e6bb9b7d71ff33267d92c5d152956",
+    "developer_changed_files": [
+      ".defects4j.config",
+      "src/main/java/com/fasterxml/jackson/databind/ser/std/EnumSerializer.java"
+    ]
+  },
+  "Jsoup-41": {
+    "buggy_tag": "D4J_Jsoup_41_BUGGY_VERSION",
+    "fixed_tag": "D4J_Jsoup_41_FIXED_VERSION",
+    "developer_patch_path": "developer_patches/Jsoup-41.diff",
+    "developer_patch_sha256": "a34a2cba954031801d4e858c0a5c412ad50dff96cdb45cdf13e055d8a216203a",
+    "developer_changed_files": [
+      ".defects4j.config",
+      "src/main/java/org/jsoup/nodes/Element.java"
+    ]
+  },
+  "Jsoup-45": {
+    "buggy_tag": "D4J_Jsoup_45_BUGGY_VERSION",
+    "fixed_tag": "D4J_Jsoup_45_FIXED_VERSION",
+    "developer_patch_path": "developer_patches/Jsoup-45.diff",
+    "developer_patch_sha256": "021fc7dd1e1b080c94d0603bae91fadc48b301267a902bf2ae583ae58bcc3ff0",
+    "developer_changed_files": [
+      ".defects4j.config",
+      "src/main/java/org/jsoup/parser/HtmlTreeBuilder.java"
+    ]
+  },
+  "Jsoup-89": {
+    "buggy_tag": "D4J_Jsoup_89_BUGGY_VERSION",
+    "fixed_tag": "D4J_Jsoup_89_FIXED_VERSION",
+    "developer_patch_path": "developer_patches/Jsoup-89.diff",
+    "developer_patch_sha256": "6b748bb74597cd5f6a415e587a42142f352152c25a2de036f4903b1a5cc88e56",
+    "developer_changed_files": [
+      ".defects4j.config",
+      "src/main/java/org/jsoup/nodes/Attribute.java"
+    ]
+  },
+  "Lang-40": {
+    "buggy_tag": "D4J_Lang_40_BUGGY_VERSION",
+    "fixed_tag": "D4J_Lang_40_FIXED_VERSION",
+    "developer_patch_path": "developer_patches/Lang-40.diff",
+    "developer_patch_sha256": "362463ba1a958d950ad843112fa7c6583e00614005031afaad8628e678447fed",
+    "developer_changed_files": [
+      ".defects4j.config",
+      "src/java/org/apache/commons/lang/StringUtils.java"
+    ]
+  },
+  "Lang-62": {
+    "buggy_tag": "D4J_Lang_62_BUGGY_VERSION",
+    "fixed_tag": "D4J_Lang_62_FIXED_VERSION",
+    "developer_patch_path": "developer_patches/Lang-62.diff",
+    "developer_patch_sha256": "0c819abc044374110c33bc0bfabfbf69c0448504f9439767409ab0bb4533f41f",
+    "developer_changed_files": [
+      ".defects4j.config",
+      "src/java/org/apache/commons/lang/Entities.java"
+    ]
+  },
+  "Math-91": {
+    "buggy_tag": "D4J_Math_91_BUGGY_VERSION",
+    "fixed_tag": "D4J_Math_91_FIXED_VERSION",
+    "developer_patch_path": "developer_patches/Math-91.diff",
+    "developer_patch_sha256": "c15a3a4cb37c78aefab9cfb9ad0645a926524b4be5b2506320ab853a3b752de1",
+    "developer_changed_files": [
+      ".defects4j.config",
+      "src/java/org/apache/commons/math/fraction/Fraction.java"
+    ]
+  },
+  "Mockito-1": {
+    "buggy_tag": "D4J_Mockito_1_BUGGY_VERSION",
+    "fixed_tag": "D4J_Mockito_1_FIXED_VERSION",
+    "developer_patch_path": "developer_patches/Mockito-1.diff",
+    "developer_patch_sha256": "02f0600d9fe328bfc90a46bfab3ecd76025d641960f86980fab34bd206f88ec8",
+    "developer_changed_files": [
+      ".defects4j.config",
+      "src/org/mockito/internal/invocation/InvocationMatcher.java"
+    ]
+  }
+}

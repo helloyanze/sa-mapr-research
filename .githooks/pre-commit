@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+repo_root="$(git rev-parse --show-toplevel)"
+if command -v python3 >/dev/null 2>&1; then
+  python3 "${repo_root}/scripts/check_repository.py" --staged
+else
+  python "${repo_root}/scripts/check_repository.py" --staged
+fi
